@@ -10,7 +10,8 @@
 html[data-t=light]{--bg:#f2f4f7;--fg:#1c2233;--mu:#6c7488;--ln:#dde1ea;--ac:#3f8a7e;--sf:#fff;--qb:#e3eeec}
 html[data-t=sepia]{--bg:#f0e7d4;--fg:#3b3226;--mu:#8a7b64;--ln:#ddd0b6;--ac:#8a5a2b;--sf:#f8f1e2;--qb:#eadcc0}
 html[data-t=night]{--bg:#0e1220;--fg:#d3d8e6;--mu:#7d869c;--ln:#232a40;--ac:#8fc7bb;--sf:#171d31;--qb:#17243a}
-html.hm,html.hm body{background:#10162a}body{position:relative}
+html.hm,html.hm body{background:#10162a}
+@media(display-mode:standalone){html,body,.v{height:calc(100dvh + env(safe-area-inset-top))}}body{position:relative}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 html,body{margin:0;height:100%;height:100dvh;overflow:hidden;background:var(--bg);color:var(--fg);font-family:-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;overscroll-behavior:none}
 button{font:inherit;color:inherit;cursor:pointer}
